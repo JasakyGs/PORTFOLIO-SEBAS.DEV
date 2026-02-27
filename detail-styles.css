@@ -1,0 +1,214 @@
+/* ============================================
+   ESTILOS PARA PÁGINAS DE DETALLE
+   (Proyectos y Certificaciones)
+   ============================================ */
+
+/* Header de retorno */
+.detail-header {
+    padding: 2rem 0;
+    background: var(--bg-secundario);
+    border-bottom: 1px solid rgba(177, 18, 38, 0.1);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    transition: var(--transicion);
+}
+
+.back-link:hover {
+    color: var(--rojo-glow);
+}
+
+.back-link svg {
+    transition: var(--transicion);
+}
+
+.back-link:hover svg {
+    transform: translateX(-4px);
+}
+
+/* Main content */
+.detail-main {
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+
+.detail-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header del proyecto/certificación */
+.detail-header-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.detail-header-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.tech-tags span {
+    background: rgba(177, 18, 38, 0.15);
+    color: var(--rojo-glow);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Secciones de detalle */
+.detail-section {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: var(--bg-secundario);
+    border-radius: var(--radio);
+    border: 1px solid rgba(177, 18, 38, 0.1);
+}
+
+.detail-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+    color: var(--rojo-glow);
+    font-weight: 600;
+}
+
+.detail-section p {
+    color: var(--texto-secundario);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.detail-section ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: var(--texto-secundario);
+}
+
+.detail-section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Tech grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.tech-item {
+    background: var(--bg-principal);
+    padding: 1.5rem;
+    border-radius: var(--radio);
+    text-align: center;
+    border: 1px solid rgba(177, 18, 38, 0.1);
+    transition: var(--transicion);
+}
+
+.tech-item:hover {
+    border-color: var(--rojo-base);
+}
+
+.tech-item h3 {
+    color: var(--rojo-glow);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-item p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Learning list */
+.learning-list {
+    list-style: none !important;
+    margin-left: 0 !important;
+}
+
+.learning-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.learning-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--rojo-glow);
+    font-weight: bold;
+}
+
+/* Status box */
+.status-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-principal);
+    border-radius: var(--radio);
+    margin-bottom: 1rem;
+}
+
+.status-label {
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.status-pending {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+.status-available {
+    color: var(--rojo-glow);
+}
+
+.note {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Footer de detalle */
+.detail-footer {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .detail-header-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-section {
+        padding: 1.5rem;
+    }
+}
