@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-sebas-dev",
+  "version": "1.0.0",
+  "description": "Portfolio personal de Sebas.dev",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
