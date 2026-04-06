@@ -1884,19 +1884,11 @@ ul {
 /* ============================================
    FOOTER
     ============================================ */
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: var(--bg-principal);
-        flex-direction: column;
-        padding: 2rem;
-        gap: 1.5rem;
-        transform: translateY(-150%);
-        transition: var(--transicion);
-        border-bottom: 1px solid rgba(177, 18, 38, 0.1);
-    }
-    
+.footer {
+    padding: 2rem 0;
+    background: var(--bg-principal);
+    border-top: 1px solid rgba(177, 18, 38, 0.2);
+}
     .nav-links.active {
         transform: translateY(0);
     }
