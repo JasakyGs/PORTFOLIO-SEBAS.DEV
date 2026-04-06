@@ -26,13 +26,27 @@
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav.sobre_mi">Sobre Mí</a></li>
+                <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+                <li><a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="#formacion" data-i18n="nav.formacion">Formación</a></li>
+                <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
             </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-btn" id="langBtn"><i class="fas fa-globe"></i> ES</button>
+                    <div class="lang-menu">
+                        <button data-lang="en"><i class="fas fa-globe"></i> EN</button>
+                        <button data-lang="de"><i class="fas fa-globe"></i> DE</button>
+                        <button data-lang="ru"><i class="fas fa-globe"></i> RU</button>
+                        <button data-lang="es" class="active"><i class="fas fa-globe"></i> ES</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -43,17 +57,17 @@
         <div class="container">
             <div class="hero-inner">
                 <div class="hero-content">
-                    <span class="section-label reveal">01 — Inicio</span>
+                    <span class="section-label reveal">01 — <span data-i18n="nav.inicio">Inicio</span></span>
                     <h1 class="display-xl hero-title">
                         <span class="line">Sebastian</span>
                         <span class="line accent">Galvis</span>
                     </h1>
-                    <p class="hero-description">
+                    <p class="hero-description" data-i18n="hero.descripcion">
                         Perfil analítico orientado al aprendizaje continuo y mejora constante.
                         Comprometido con el desarrollo web y el análisis de sistemas.
                     </p>
                     <div class="hero-actions">
-                        <a href="#proyectos" class="btn btn-primary">
+                        <a href="#proyectos" class="btn btn-primary" data-i18n="hero.ver_proyectos">
                             Ver Proyectos
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
@@ -93,18 +107,18 @@
     ============================================= -->
     <section class="sobre-mi" id="sobre-mi">
         <div class="container">
-            <h2 class="section-title fade-in">Sobre Mí</h2>
+            <h2 class="section-title fade-in" data-i18n="sobre_mi.titulo">Sobre Mí</h2>
             <div class="sobre-mi-grid">
                 <div class="sobre-mi-texto fade-in">
-                    <p>
+                    <p data-i18n="sobre_mi.texto1">
                         Soy un desarrollador en formación con enfoque analítico y Disciplinado.
                         Me comprometo con el aprendizaje continuo y la mejora constante en cada proyecto.
                     </p>
-                    <p>
+                    <p data-i18n="sobre_mi.texto2">
                         Mi interés se centra en el <strong>desarrollo web</strong> y el <strong>análisis de sistemas</strong>,
                         buscando siempre soluciones eficientes y bien estructuradas.
                     </p>
-                    <p>
+                    <p data-i18n="sobre_mi.texto3">
                         Actualmente me encuentro en la <strong>etapa productiva</strong> de mi formación,
                         buscando oportunidades para aplicar mis conocimientos y seguir creciendo profesionalmente.
                     </p>
@@ -154,14 +168,14 @@
     ============================================= -->
     <section id="stack" class="section">
         <div class="container">
-            <span class="section-label reveal">03 — Stack</span>
-            <h2 class="display-lg reveal r1">Herramientas y tecnologías</h2>
+            <span class="section-label reveal">03 — <span data-i18n="nav.stack">Stack</span></span>
+            <h2 class="display-lg reveal r1" data-i18n="stack.titulo">Herramientas y tecnologías</h2>
 
             <div class="stack-grid">
                 <div class="stack-cat">
                     <div class="stack-cat-head">
                         <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                        <h3 class="stack-cat-title">Frontend</h3>
+                        <h3 class="stack-cat-title" data-i18n="stack.frontend">Frontend</h3>
                     </div>
                     <div class="stack-tags">
                         <span class="stack-tag">HTML5</span>
@@ -173,7 +187,7 @@
                 <div class="stack-cat">
                     <div class="stack-cat-head">
                         <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-                        <h3 class="stack-cat-title">Base de Datos</h3>
+                        <h3 class="stack-cat-title" data-i18n="stack.database">Base de Datos</h3>
                     </div>
                     <div class="stack-tags">
                         <span class="stack-tag">MySQL</span>
@@ -185,7 +199,7 @@
                 <div class="stack-cat">
                     <div class="stack-cat-head">
                         <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M6 9v12"></path></svg>
-                        <h3 class="stack-cat-title">Control de Versiones</h3>
+                        <h3 class="stack-cat-title" data-i18n="stack.version">Control de Versiones</h3>
                     </div>
                     <div class="stack-tags">
                         <span class="stack-tag">Git</span>
@@ -196,7 +210,7 @@
                 <div class="stack-cat">
                     <div class="stack-cat-head">
                         <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="3" width="20" height="14" rx="0" ry="0"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        <h3 class="stack-cat-title">Ofimática</h3>
+                        <h3 class="stack-cat-title" data-i18n="stack.ofimatica">Ofimática</h3>
                     </div>
                     <div class="stack-tags">
                         <span class="stack-tag">Excel</span>
@@ -208,7 +222,7 @@
                 <div class="stack-cat">
                     <div class="stack-cat-head">
                         <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path><circle cx="8" cy="14" r="2"></circle><circle cx="16" cy="14" r="2"></circle></svg>
-                        <h3 class="stack-cat-title">IA Aplicada</h3>
+                        <h3 class="stack-cat-title" data-i18n="stack.ia">IA Aplicada</h3>
                     </div>
                     <div class="stack-tags">
                         <span class="stack-tag">ChatGPT</span>
@@ -220,7 +234,7 @@
                 <div class="stack-cat">
                     <div class="stack-cat-head">
                         <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        <h3 class="stack-cat-title">Metodologías</h3>
+                        <h3 class="stack-cat-title" data-i18n="stack.metodologias">Metodologías</h3>
                     </div>
                     <div class="stack-tags">
                         <span class="stack-tag">Scrum</span>
@@ -237,8 +251,8 @@
     ============================================= -->
     <section id="proyectos" class="section">
         <div class="container">
-            <span class="section-label reveal">04 — Proyectos</span>
-            <h2 class="display-lg reveal r1">Mis Trabajos</h2>
+            <span class="section-label reveal">04 — <span data-i18n="nav.proyectos">Proyectos</span></span>
+            <h2 class="display-lg reveal r1" data-i18n="proyectos.titulo">Mis Trabajos</h2>
             
             <div class="proyectos-grid">
                 <div class="proyecto-card proyecto-inventario fade-in">
@@ -246,7 +260,7 @@
                         <img src="ASSETS PROYECTOS/LOGO 2.png" alt="Inventario" class="proyecto-logo">
                     </div>
                     <h3>Inventario de Ropa</h3>
-                    <p class="proyecto-desc">Sistema de gestión de inventario para tienda de ropa con control de stock y productos.</p>
+                    <p class="proyecto-desc" data-i18n="proyectos.inventario.desc">Sistema de gestión de inventario para tienda de ropa con control de stock y productos.</p>
                     <div class="proyecto-tech">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -255,33 +269,33 @@
                         <span>Tailwind</span>
                         <span>MySQL</span>
                     </div>
-                    <a href="proyecto-inventario.html" class="btn btn-outline">Ver Detalles</a>
+                    <a href="proyecto-inventario.html" class="btn btn-outline" data-i18n="proyectos.ver_detalles">Ver Detalles</a>
                 </div>
                 <div class="proyecto-card proyecto-geekoh fade-in">
                     <div class="proyecto-card-header">
                         <img src="ASSETS PROYECTOS/LOGO LIGNUM.png" alt="Logo Lignum" class="proyecto-logo">
                     </div>
                     <h3>Geek Oh</h3>
-                    <p class="proyecto-desc">Página web para un juego de terror interactivo. Contiene información del juego y espacio para futuras descargas.</p>
+                    <p class="proyecto-desc" data-i18n="proyectos.geekoh.desc">Página web para un juego de terror interactivo. Contiene información del juego y espacio para futuras descargas.</p>
                     <div class="proyecto-tech">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="proyecto-geekoh.html" class="btn btn-outline">Ver Detalles</a>
+                    <a href="proyecto-geekoh.html" class="btn btn-outline" data-i18n="proyectos.ver_detalles">Ver Detalles</a>
                 </div>
                 <div class="proyecto-card fade-in">
                     <div class="proyecto-card-header">
                         <i class="fas fa-hat-wizard"></i>
                     </div>
                     <h3>Poder-Pedia</h3>
-                    <p class="proyecto-desc">Enciclopedia interactiva de un mundo de fantasía en constante desarrollo.</p>
+                    <p class="proyecto-desc" data-i18n="proyectos.poderpedia.desc">Enciclopedia interactiva de un mundo de fantasía en constante desarrollo.</p>
                     <div class="proyecto-tech">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="proyecto-poderpedia.html" class="btn btn-outline">Ver Detalles</a>
+                    <a href="proyecto-poderpedia.html" class="btn btn-outline" data-i18n="proyectos.ver_detalles">Ver Detalles</a>
                 </div>
             </div>
         </div>
@@ -292,38 +306,38 @@
     ============================================= -->
     <section id="formacion" class="section">
         <div class="container">
-            <span class="section-label reveal">05 — Formación & Certificados</span>
-            <h2 class="display-lg reveal r1" style="margin-bottom: 3rem;">Educación continua</h2>
+            <span class="section-label reveal">05 — <span data-i18n="nav.formacion">Formación & Certificados</span></span>
+            <h2 class="display-lg reveal r1" style="margin-bottom: 3rem;" data-i18n="formacion.titulo">Educación continua</h2>
 
             <div class="edu-cert-grid reveal">
                 <!-- Formación Académica -->
                 <div class="edu-col">
-                    <h3 class="edu-col-title">Formación Académica</h3>
+                    <h3 class="edu-col-title" data-i18n="formacion.academica">Formación Académica</h3>
 
                     <div class="edu-item">
-                        <div class="edu-year">2023 — Presente</div>
-                        <h4 class="heading-md edu-title">Tecnólogo en Análisis y Desarrollo de Software</h4>
+                        <div class="edu-year">2023 — <span data-i18n="formacion.presente">Presente</span></div>
+                        <h4 class="heading-md edu-title" data-i18n="formacion.tecnologo">Tecnólogo en Análisis y Desarrollo de Software</h4>
                         <p class="edu-inst">SENA — Servicio Nacional de Aprendizaje</p>
                         <div class="edu-competencies">
-                            <span class="edu-comp">Análisis de sistemas</span>
-                            <span class="edu-comp">Bases de datos</span>
-                            <span class="edu-comp">QA Testing</span>
-                            <span class="edu-comp">Documentación técnica</span>
-                            <span class="edu-comp">Metodologías de desarrollo</span>
+                            <span class="edu-comp" data-i18n="formacion.analisis">Análisis de sistemas</span>
+                            <span class="edu-comp" data-i18n="formacion.bd">Bases de datos</span>
+                            <span class="edu-comp" data-i18n="formacion.qa">QA Testing</span>
+                            <span class="edu-comp" data-i18n="formacion.documentacion">Documentación técnica</span>
+                            <span class="edu-comp" data-i18n="formacion.metodologias">Metodologías de desarrollo</span>
                         </div>
                         <div style="margin-top: 1rem;">
-                            <span class="mono-xs" style="color: var(--rojo-glow);">Estado: Etapa productiva en búsqueda</span>
+                            <span class="mono-xs" style="color: var(--rojo-glow);" data-i18n="formacion.estado">Estado: Etapa productiva en búsqueda</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Certificaciones -->
                 <div class="edu-col">
-                    <h3 class="edu-col-title">Certificaciones</h3>
+                    <h3 class="edu-col-title" data-i18n="formacion.certificaciones">Certificaciones</h3>
 
                     <a href="CERTIFICADOS/9122003253011CC1097782457E.pdf" target="_blank" class="cert-item">
                         <div class="cert-info">
-                            <h4>Inglés Niveles 2 y 3</h4>
+                            <h4 data-i18n="cert.ingles">Inglés Niveles 2 y 3</h4>
                             <p>SENA</p>
                         </div>
                         <div>
@@ -334,7 +348,7 @@
 
                     <a href="CERTIFICADOS/certificado-claseflix-marketing.pdf" target="_blank" class="cert-item">
                         <div class="cert-info">
-                            <h4>Marketing Digital</h4>
+                            <h4 data-i18n="cert.marketing">Marketing Digital</h4>
                             <p>ClaseFlix</p>
                         </div>
                         <div>
@@ -345,7 +359,7 @@
 
                     <a href="CERTIFICADOS/JOHAN_SEBASTIAN_GALVIS_BARAJAS_6FDE97CB.pdf" target="_blank" class="cert-item">
                         <div class="cert-info">
-                            <h4>Power BI</h4>
+                            <h4 data-i18n="cert.powerbi">Power BI</h4>
                             <p>ClaseFlix</p>
                         </div>
                         <div>
@@ -356,7 +370,7 @@
 
                     <a href="CERTIFICADOS/JOHAN_SEBASTIAN_GALVIS_BARAJAS_88A0DD55.pdf" target="_blank" class="cert-item">
                         <div class="cert-info">
-                            <h4>Creación de Contenido con IA</h4>
+                            <h4 data-i18n="cert.ia">Creación de Contenido con IA</h4>
                             <p>SENA</p>
                         </div>
                         <div>
@@ -367,7 +381,7 @@
 
                     <a href="CERTIFICADOS/certificado-claseflix comunity manager.pdf" target="_blank" class="cert-item">
                         <div class="cert-info">
-                            <h4>Community Manager</h4>
+                            <h4 data-i18n="cert.community">Community Manager</h4>
                             <p>ClaseFlix</p>
                         </div>
                         <div>
@@ -378,7 +392,7 @@
 
                     <a href="CERTIFICADOS/certificado-claseflix 2.pdf" target="_blank" class="cert-item">
                         <div class="cert-info">
-                            <h4>Excel Desde Cero</h4>
+                            <h4 data-i18n="cert.excel">Excel Desde Cero</h4>
                             <p>ClaseFlix</p>
                         </div>
                         <div>
@@ -389,8 +403,8 @@
 
                     <div class="cert-progress">
                         <div class="cert-progress-head">
-                            <h4>Full Stack Developer — FreeCodeCamp</h4>
-                            <p>En progreso (~60%)</p>
+                            <h4 data-i18n="cert.freecodecamp">Full Stack Developer — FreeCodeCamp</h4>
+                            <p data-i18n="cert.en_progreso">En progreso (~60%)</p>
                         </div>
                         <div class="progress-bar">
                             <div class="progress-bar-fill"></div>
@@ -406,12 +420,12 @@
     ============================================= -->
     <section id="contacto" class="section">
         <div class="container">
-            <span class="section-label reveal">06 — Contacto</span>
-            <h2 class="display-lg reveal r1" style="margin-bottom: 3rem;">Conectemos</h2>
+            <span class="section-label reveal">06 — <span data-i18n="nav.contacto">Contacto</span></span>
+            <h2 class="display-lg reveal r1" style="margin-bottom: 3rem;" data-i18n="contacto.titulo">Conectemos</h2>
 
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <p class="contact-text">
+                    <p class="contact-text" data-i18n="contacto.texto">
                         ¿Buscas un desarrollador comprometido y en formación? 
                         ¡Contáctame! Estoy disponible para nuevas oportunidades laborales.
                     </p>
@@ -431,22 +445,22 @@
                 <div class="contact-form-wrap reveal r1">
                     <form class="contact-form">
                         <div class="form-field">
-                            <label for="name" class="form-label">Nombre</label>
+                            <label for="name" class="form-label" data-i18n="contacto.nombre">Nombre</label>
                             <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
                         </div>
                         <div class="form-field">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label" data-i18n="contacto.email">Email</label>
                             <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
                         </div>
                         <div class="form-field">
-                            <label for="subject" class="form-label">Asunto</label>
+                            <label for="subject" class="form-label" data-i18n="contacto.asunto">Asunto</label>
                             <input type="text" id="subject" name="subject" class="form-input" required>
                         </div>
                         <div class="form-field">
-                            <label for="message" class="form-label">Mensaje</label>
+                            <label for="message" class="form-label" data-i18n="contacto.mensaje">Mensaje</label>
                             <textarea id="message" name="message" class="form-textarea" required rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary" data-i18n="contacto.enviar">
                             Enviar mensaje
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                         </button>
