@@ -818,13 +818,6 @@ ul {
 /* ============================================
    PROYECTOS
     ============================================ */
-    transition: all 0.4s ease;
-    text-align: center;
-}
-
-/* ============================================
-   PROYECTOS
-    ============================================ */
 .proyectos {
     padding: 6rem 0;
     background: var(--bg-secundario);
@@ -1685,6 +1678,10 @@ ul {
     
     .edu-col {
         grid-column: span 6;
+    }
+    
+    .edu-cert-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .contact-grid {
