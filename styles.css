@@ -1818,62 +1818,72 @@ ul {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
-    }
-    
-    .display-lg {
         font-size: 1.75rem;
     }
     
+    .display-lg {
+        font-size: 1.5rem;
+    }
+    
     .display-xl {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
     }
     
     .hero-photo {
-        max-width: 200px;
+        max-width: 180px;
+    }
+    
+    .hero-photo-label {
+        font-size: 0.65rem;
+    }
+    
+    .section-label {
+        font-size: 0.65rem;
+    }
+    
+    .hero-meta-label {
+        font-size: 0.65rem;
+    }
+    
+    .hero-meta-value {
+        font-size: 0.8rem;
     }
     
     .btn-primary,
     .btn-outline {
-        padding: 0.75rem 1rem;
-        font-size: 0.75rem;
-    }
-}
-    
-    .hero-text .descripcion {
-        margin: 0 auto 2rem;
+        padding: 0.65rem 1rem;
+        font-size: 0.7rem;
     }
     
-    .hero-text .btn {
-        margin-right: 0.5rem;
+    .section {
+        padding: 4rem 0;
     }
     
-    .hero-image {
-        order: -1;
-        margin-bottom: 1.5rem;
+    .container {
+        padding: 0 16px;
     }
     
-    .stack-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .stack-cat {
+        padding: 1.25rem;
     }
     
-    .proyectos-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .stack-cat-title {
+        font-size: 0.65rem;
     }
     
-    .certificaciones-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .stack-tag {
+        font-size: 0.7rem;
+        padding: 4px 10px;
     }
-    
-    .edu-col { grid-column: span 6; }
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-    
-    .nav-links {
+/* ============================================
+   FOOTER
+    ============================================ */
         position: fixed;
         top: 70px;
         left: 0;
