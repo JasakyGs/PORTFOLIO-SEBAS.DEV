@@ -1675,26 +1675,6 @@ ul {
     .hero-description {
         max-width: 100%;
     }
-    
-    .edu-col {
-        grid-column: span 6;
-    }
-    
-    .edu-cert-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-info {
-        grid-column: 1;
-    }
-    
-    .contact-form-wrap {
-        grid-column: 1;
-    }
 }
 
 @media (max-width: 768px) {
