@@ -1683,6 +1683,10 @@ ul {
         max-width: 100%;
     }
     
+    .edu-col {
+        grid-column: span 6;
+    }
+    
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1693,16 +1697,6 @@ ul {
     
     .contact-form-wrap {
         grid-column: 1;
-    }
-    
-    .edu-cert-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .edu-col {
-        grid-column: 1;
-        border-right: none;
-        border-bottom: 1px solid rgba(177, 18, 38, 0.3);
     }
 }
 
