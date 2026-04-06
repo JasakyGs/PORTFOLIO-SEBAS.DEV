@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ============================================
@@ -30,7 +30,6 @@
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
                 <li><a href="#stack">Stack</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#certificaciones">Certificaciones</a></li>
                 <li><a href="#formacion">Formación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -40,26 +39,50 @@
     <!-- ============================================
          HERO SECTION
     ============================================= -->
-    <section class="hero" id="inicio">
-        <div class="container hero-content">
-            <div class="hero-text fade-in">
-                <h1><span class="typewriter" data-text="Sebastian Galvis"></span><span class="cursor">|</span></h1>
-                <p class="rol">Desarrollador de Software en formación</p>
-                <p class="descripcion">
-                    Perfil analítico orientado al aprendizaje continuo y mejora constante.
-                    Comprometido con el desarrollo web y el análisis de sistemas.
-                </p>
-                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                <a href="https://github.com/JasakyGs" target="_blank" class="btn btn-github">
-                    <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-            <div class="hero-image fade-in">
-                <div class="imagen-perfil">
-                    <img src="images/perfil.png" alt="Sebastian Galvis">
+    <section class="hero section" id="inicio">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="section-label reveal">01 — Inicio</span>
+                    <h1 class="display-xl hero-title">
+                        <span class="line">Sebastian</span>
+                        <span class="line accent">Galvis</span>
+                    </h1>
+                    <p class="hero-description">
+                        Perfil analítico orientado al aprendizaje continuo y mejora constante.
+                        Comprometido con el desarrollo web y el análisis de sistemas.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#proyectos" class="btn btn-primary">
+                            Ver Proyectos
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="https://github.com/JasakyGs" target="_blank" class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Ubicación</span>
+                            <span class="hero-meta-value">Colombia</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Email</span>
+                            <span class="hero-meta-value">
+                                <a href="mailto:sebastiangalvis13140@gmail.com">sebastiangalvis13140@gmail.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-sidebar">
+                    <div class="hero-photo-wrapper">
+                        <div class="hero-photo">
+                            <img src="images/ICON RED .png" alt="Sebastian Galvis">
+                            <div class="hero-photo-shine"></div>
+                        </div>
+                        <div class="hero-photo-label">Sebastian Galvis — 2025</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,36 +113,30 @@
                     <div class="skills-chart">
                         <div class="radar-chart">
                             <svg viewBox="0 0 300 280">
-                                <!-- Fondo del radar (capas) -->
                                 <polygon class="radar-bg" points="150,25 265,90 235,235 65,235 35,90" />
                                 <polygon class="radar-bg" points="150,50 225,98 205,205 95,205 75,98" />
                                 <polygon class="radar-bg" points="150,75 185,105 175,175 125,175 115,105" />
                                 
-                                <!-- Ejes -->
                                 <line x1="150" y1="130" x2="150" y2="25" class="radar-axis" />
                                 <line x1="150" y1="130" x2="265" y2="90" class="radar-axis" />
                                 <line x1="150" y1="130" x2="235" y2="235" class="radar-axis" />
                                 <line x1="150" y1="130" x2="65" y2="235" class="radar-axis" />
                                 <line x1="150" y1="130" x2="35" y2="90" class="radar-axis" />
                                 
-                                <!-- Áreas coloreadas por skill (triángulos desde el centro) -->
                                 <polygon class="radar-area" style="fill: rgba(177,18,38,0.15); stroke: #b11226;" points="150,130 150,44 150,130" />
                                 <polygon class="radar-area" style="fill: rgba(154,205,50,0.15); stroke: #9acd32;" points="150,130 245,100 150,130" />
                                 <polygon class="radar-area" style="fill: rgba(0,191,255,0.15); stroke: #00bfff;" points="150,130 215,215 150,130" />
                                 <polygon class="radar-area" style="fill: rgba(217,70,239,0.15); stroke: #d946ef;" points="150,130 85,215 150,130" />
                                 <polygon class="radar-area" style="fill: rgba(245,158,11,0.15); stroke: #f59e0b;" points="150,130 55,100 150,130" />
                                 
-                                <!-- Polígono principal -->
                                 <polygon class="radar-main" points="150,44 245,100 215,215 85,215 55,100" />
                                 
-                                <!-- Puntos -->
                                 <circle cx="150" cy="44" r="7" class="radar-point" style="--color: #b11226; --delay: 0s;" />
                                 <circle cx="245" cy="100" r="7" class="radar-point" style="--color: #9acd32; --delay: 0.15s;" />
                                 <circle cx="215" cy="215" r="7" class="radar-point" style="--color: #00bfff; --delay: 0.3s;" />
                                 <circle cx="85" cy="215" r="7" class="radar-point" style="--color: #d946ef; --delay: 0.45s;" />
                                 <circle cx="55" cy="100" r="7" class="radar-point" style="--color: #f59e0b; --delay: 0.6s;" />
                             </svg>
-                            <!-- Labels -->
                             <span class="radar-label" style="top: -2%; left: 50%; transform: translateX(-50%);">Disciplina<br><small>90%</small></span>
                             <span class="radar-label" style="top: 22%; right: -5%;">Aprendizaje<br><small>85%</small></span>
                             <span class="radar-label" style="bottom: 2%; right: 2%;">Des. Web<br><small>75%</small></span>
@@ -135,100 +152,95 @@
     <!-- ============================================
          STACK TÉCNICO
     ============================================= -->
-    <section class="stack" id="stack">
+    <section id="stack" class="section">
         <div class="container">
-            <h2 class="section-title stack-title fade-in">Stack Técnico</h2>
-            <p class="section-subtitle fade-in">Technologies & Skills</p>
-            
+            <span class="section-label reveal">03 — Stack</span>
+            <h2 class="display-lg reveal r1">Herramientas y tecnologías</h2>
+
             <div class="stack-grid">
-                <!-- Frontend -->
-                <article class="stack-card fade-in">
-                    <div class="stack-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <div class="stack-cat">
+                    <div class="stack-cat-head">
+                        <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        <h3 class="stack-cat-title">Frontend</h3>
                     </div>
-                    <h3>Frontend</h3>
                     <div class="stack-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+                        <span class="stack-tag">HTML5</span>
+                        <span class="stack-tag">CSS3</span>
+                        <span class="stack-tag">JavaScript</span>
                     </div>
-                </article>
+                </div>
 
-                <!-- Base de Datos -->
-                <article class="stack-card fade-in">
-                    <div class="stack-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                <div class="stack-cat">
+                    <div class="stack-cat-head">
+                        <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        <h3 class="stack-cat-title">Base de Datos</h3>
                     </div>
-                    <h3>Base de Datos</h3>
                     <div class="stack-tags">
-                        <span class="tag">MySQL</span>
-                        <span class="tag">Consultas</span>
-                        <span class="tag">Diseño</span>
+                        <span class="stack-tag">MySQL</span>
+                        <span class="stack-tag">Consultas SQL</span>
+                        <span class="stack-tag">Diseño de BD</span>
                     </div>
-                </article>
+                </div>
 
-                <!-- Control de Versiones -->
-                <article class="stack-card fade-in">
-                    <div class="stack-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M6 9v12"></path></svg>
+                <div class="stack-cat">
+                    <div class="stack-cat-head">
+                        <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M6 9v12"></path></svg>
+                        <h3 class="stack-cat-title">Control de Versiones</h3>
                     </div>
-                    <h3>Control de Versiones</h3>
                     <div class="stack-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">GitHub</span>
+                        <span class="stack-tag">Git</span>
+                        <span class="stack-tag">GitHub</span>
                     </div>
-                </article>
+                </div>
 
-                <!-- Ofimática -->
-                <article class="stack-card fade-in">
-                    <div class="stack-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <div class="stack-cat">
+                    <div class="stack-cat-head">
+                        <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="3" width="20" height="14" rx="0" ry="0"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        <h3 class="stack-cat-title">Ofimática</h3>
                     </div>
-                    <h3>Ofimática</h3>
                     <div class="stack-tags">
-                        <span class="tag">Excel</span>
-                        <span class="tag">Word</span>
-                        <span class="tag">PowerPoint</span>
+                        <span class="stack-tag">Excel</span>
+                        <span class="stack-tag">Word</span>
+                        <span class="stack-tag">PowerPoint</span>
                     </div>
-                </article>
+                </div>
 
-                <!-- IA Aplicada -->
-                <article class="stack-card fade-in">
-                    <div class="stack-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path><circle cx="8" cy="14" r="2"></circle><circle cx="16" cy="14" r="2"></circle></svg>
+                <div class="stack-cat">
+                    <div class="stack-cat-head">
+                        <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path><circle cx="8" cy="14" r="2"></circle><circle cx="16" cy="14" r="2"></circle></svg>
+                        <h3 class="stack-cat-title">IA Aplicada</h3>
                     </div>
-                    <h3>IA Aplicada</h3>
                     <div class="stack-tags">
-                        <span class="tag">ChatGPT</span>
-                        <span class="tag">Automatización</span>
-                        <span class="tag">Productividad</span>
+                        <span class="stack-tag">ChatGPT</span>
+                        <span class="stack-tag">Automatización</span>
+                        <span class="stack-tag">Productividad</span>
                     </div>
-                </article>
+                </div>
 
-                <!-- Metodologías -->
-                <article class="stack-card fade-in">
-                    <div class="stack-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <div class="stack-cat">
+                    <div class="stack-cat-head">
+                        <svg class="stack-cat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        <h3 class="stack-cat-title">Metodologías</h3>
                     </div>
-                    <h3>Metodologías</h3>
                     <div class="stack-tags">
-                        <span class="tag">Scrum</span>
-                        <span class="tag">Análisis</span>
-                        <span class="tag">Documentación</span>
+                        <span class="stack-tag">Scrum</span>
+                        <span class="stack-tag">Análisis</span>
+                        <span class="stack-tag">Documentación</span>
                     </div>
-                </article>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-          PROYECTOS
+         PROYECTOS
     ============================================= -->
-    <section class="proyectos" id="proyectos">
+    <section id="proyectos" class="section">
         <div class="container">
-            <h2 class="section-title fade-in">Proyectos</h2>
+            <span class="section-label reveal">04 — Proyectos</span>
+            <h2 class="display-lg reveal r1">Mis Trabajos</h2>
+            
             <div class="proyectos-grid">
-                <!-- Proyecto 1: Inventario de Ropa -->
                 <div class="proyecto-card proyecto-inventario fade-in">
                     <div class="proyecto-card-header">
                         <img src="ASSETS PROYECTOS/LOGO 2.png" alt="Inventario" class="proyecto-logo">
@@ -245,7 +257,6 @@
                     </div>
                     <a href="proyecto-inventario.html" class="btn btn-outline">Ver Detalles</a>
                 </div>
-                <!-- Proyecto 2: Geek Oh -->
                 <div class="proyecto-card proyecto-geekoh fade-in">
                     <div class="proyecto-card-header">
                         <img src="ASSETS PROYECTOS/LOGO LIGNUM.png" alt="Logo Lignum" class="proyecto-logo">
@@ -259,7 +270,6 @@
                     </div>
                     <a href="proyecto-geekoh.html" class="btn btn-outline">Ver Detalles</a>
                 </div>
-                <!-- Proyecto 3: Poder-Pedia -->
                 <div class="proyecto-card fade-in">
                     <div class="proyecto-card-header">
                         <i class="fas fa-hat-wizard"></i>
@@ -278,180 +288,114 @@
     </section>
 
     <!-- ============================================
-          CERTIFICACIONES
+         FORMACIÓN & CERTIFICADOS
     ============================================= -->
-    <section id="certificaciones" class="certificados-section">
+    <section id="formacion" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Certificaciones</h2>
-                <p class="section-subtitle">Educación continua y validación de competencias</p>
-                <div class="title-line"></div>
-            </div>
-            
-            <div class="certificados-grid">
-                <!-- Certificado 1: Inglés -->
-                <div class="certificado-card cert-green" onclick="openCert('CERTIFICADOS/9122003253011CC1097782457E.pdf')">
-                    <div class="certificado-header">
-                        <div>
-                            <h3>Inglés Niveles 2 y 3</h3>
+            <span class="section-label reveal">05 — Formación & Certificados</span>
+            <h2 class="display-lg reveal r1" style="margin-bottom: 3rem;">Educación continua</h2>
+
+            <div class="edu-cert-grid reveal">
+                <!-- Formación Académica -->
+                <div class="edu-col">
+                    <h3 class="edu-col-title">Formación Académica</h3>
+
+                    <div class="edu-item">
+                        <div class="edu-year">2023 — Presente</div>
+                        <h4 class="heading-md edu-title">Tecnólogo en Análisis y Desarrollo de Software</h4>
+                        <p class="edu-inst">SENA — Servicio Nacional de Aprendizaje</p>
+                        <div class="edu-competencies">
+                            <span class="edu-comp">Análisis de sistemas</span>
+                            <span class="edu-comp">Bases de datos</span>
+                            <span class="edu-comp">QA Testing</span>
+                            <span class="edu-comp">Documentación técnica</span>
+                            <span class="edu-comp">Metodologías de desarrollo</span>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <span class="mono-xs" style="color: var(--rojo-glow);">Estado: Etapa productiva en búsqueda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificaciones -->
+                <div class="edu-col">
+                    <h3 class="edu-col-title">Certificaciones</h3>
+
+                    <a href="CERTIFICADOS/9122003253011CC1097782457E.pdf" target="_blank" class="cert-item">
+                        <div class="cert-info">
+                            <h4>Inglés Niveles 2 y 3</h4>
                             <p>SENA</p>
                         </div>
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <p class="certificado-anio">2025</p>
-                    <div class="certificado-tags">
-                        <span class="tag-green">Idiomas</span>
-                    </div>
-                </div>
-
-                <!-- Certificado 2: Marketing -->
-                <div class="certificado-card cert-green" onclick="openCert('CERTIFICADOS/certificado-claseflix-marketing.pdf')">
-                    <div class="certificado-header">
                         <div>
-                            <h3>Marketing Digital</h3>
+                            <span class="cert-year">2025</span>
+                            <svg class="cert-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <a href="CERTIFICADOS/certificado-claseflix-marketing.pdf" target="_blank" class="cert-item">
+                        <div class="cert-info">
+                            <h4>Marketing Digital</h4>
                             <p>ClaseFlix</p>
                         </div>
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <p class="certificado-anio">2025</p>
-                    <div class="certificado-tags">
-                        <span class="tag-green">Marketing</span>
-                    </div>
-                </div>
-
-                <!-- Certificado 3: Power BI -->
-                <div class="certificado-card cert-green" onclick="openCert('CERTIFICADOS/JOHAN_SEBASTIAN_GALVIS_BARAJAS_6FDE97CB.pdf')">
-                    <div class="certificado-header">
                         <div>
-                            <h3>Power BI</h3>
+                            <span class="cert-year">2025</span>
+                            <svg class="cert-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <a href="CERTIFICADOS/JOHAN_SEBASTIAN_GALVIS_BARAJAS_6FDE97CB.pdf" target="_blank" class="cert-item">
+                        <div class="cert-info">
+                            <h4>Power BI</h4>
                             <p>ClaseFlix</p>
                         </div>
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <p class="certificado-anio">2025</p>
-                    <div class="certificado-tags">
-                        <span class="tag-green">Análisis de Datos</span>
-                    </div>
-                </div>
-
-                <!-- Certificado 4: IA -->
-                <div class="certificado-card cert-purple" onclick="openCert('CERTIFICADOS/JOHAN_SEBASTIAN_GALVIS_BARAJAS_88A0DD55.pdf')">
-                    <div class="certificado-header">
                         <div>
-                            <h3>Creación de Contenido con IA</h3>
+                            <span class="cert-year">2025</span>
+                            <svg class="cert-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <a href="CERTIFICADOS/JOHAN_SEBASTIAN_GALVIS_BARAJAS_88A0DD55.pdf" target="_blank" class="cert-item">
+                        <div class="cert-info">
+                            <h4>Creación de Contenido con IA</h4>
                             <p>SENA</p>
                         </div>
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <p class="certificado-anio">2025</p>
-                    <div class="certificado-tags">
-                        <span class="tag-purple">Inteligencia Artificial</span>
-                    </div>
-                </div>
-
-                <!-- Certificado 5: Community Manager -->
-                <div class="certificado-card cert-cyan" onclick="openCert('CERTIFICADOS/certificado-claseflix comunity manager.pdf')">
-                    <div class="certificado-header">
                         <div>
-                            <h3>Community Manager</h3>
+                            <span class="cert-year">2025</span>
+                            <svg class="cert-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <a href="CERTIFICADOS/certificado-claseflix comunity manager.pdf" target="_blank" class="cert-item">
+                        <div class="cert-info">
+                            <h4>Community Manager</h4>
                             <p>ClaseFlix</p>
                         </div>
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <p class="certificado-anio">2025</p>
-                    <div class="certificado-tags">
-                        <span class="tag-cyan">Gestión de Comunidades</span>
-                    </div>
-                </div>
-
-                <!-- Certificado 6: Excel -->
-                <div class="certificado-card cert-green" onclick="openCert('CERTIFICADOS/certificado-claseflix 2.pdf')">
-                    <div class="certificado-header">
                         <div>
-                            <h3>Excel Desde Cero</h3>
+                            <span class="cert-year">2025</span>
+                            <svg class="cert-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <a href="CERTIFICADOS/certificado-claseflix 2.pdf" target="_blank" class="cert-item">
+                        <div class="cert-info">
+                            <h4>Excel Desde Cero</h4>
                             <p>ClaseFlix</p>
                         </div>
-                        <i class="fas fa-file-excel"></i>
-                    </div>
-                    <p class="certificado-anio">2025</p>
-                    <div class="certificado-tags">
-                        <span class="tag-green">Hojas de Cálculo</span>
-                    </div>
-                </div>
-            </div>
+                        <div>
+                            <span class="cert-year">2025</span>
+                            <svg class="cert-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </a>
 
-            <!-- En Progreso -->
-            <div class="certificado-en-progreso">
-                <div class="certificado-header">
-                    <div>
-                        <h3>Full Stack Developer</h3>
-                        <p>FreeCodeCamp</p>
+                    <div class="cert-progress">
+                        <div class="cert-progress-head">
+                            <h4>Full Stack Developer — FreeCodeCamp</h4>
+                            <p>En progreso (~60%)</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill"></div>
+                        </div>
                     </div>
-                    <i class="fas fa-code"></i>
-                </div>
-                <p class="progreso-texto">En Progreso (~60%)</p>
-                <div class="progreso-bar">
-                    <div class="progreso-fill"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-         FORMACIÓN ACADÉMICA
-    ============================================= -->
-    <section class="formacion" id="formacion">
-        <div class="container">
-            <h2 class="section-title fade-in">Formación Académica</h2>
-            <div class="formacion-card fade-in">
-                <div class="formacion-indicator">
-                    <span class="indicator-dot"></span>
-                    <span class="indicator-label">TECNÓLOGO</span>
-                </div>
-                <div class="formacion-header">
-                    <h3>Tecnólogo en Análisis y Desarrollo de Software</h3>
-                </div>
-                <p class="formacion-institucion">SENA - Servicio Nacional de Aprendizaje</p>
-                <div class="formacion-competencias">
-                    <h4>Competencias Adquiridas:</h4>
-                    <ul class="competencias-grid">
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Levantamiento de requisitos funcionales y no funcionales
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Diseño y administración de bases de datos
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Pruebas de software y control de calidad
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Diseño de listas de chequeo y validación
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Metodologías de desarrollo de software
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Implementación y mantenimiento de sistemas
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Análisis de sistemas y arquitectura de software
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            Documentación técnica y especificación de casos de uso
-                        </li>
-                    </ul>
-                </div>
-                <div class="formacion-footer">
-                    <span class="estado-label">Estado:</span>
-                    <span class="estado-value">Etapa productiva en búsqueda</span>
                 </div>
             </div>
         </div>
@@ -460,28 +404,53 @@
     <!-- ============================================
          CONTACTO
     ============================================= -->
-    <section class="contacto" id="contacto">
+    <section id="contacto" class="section">
         <div class="container">
-            <h2 class="section-title fade-in">Contacto</h2>
-            <div class="contacto-content fade-in">
-                <p class="contacto-texto">
-                    ¿Buscas un desarrollador comprometido y en formación? 
-                    ¡Contáctame! Estoy disponible para nuevas oportunidades laborales.
-                </p>
-                <div class="contacto-links">
-                    <a href="https://github.com/JasakyGs" target="_blank" class="contacto-link">
-                        <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="mailto:sebastian.galvis@email.com" class="contacto-link">
-                        <svg height="24" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        Email
-                    </a>
+            <span class="section-label reveal">06 — Contacto</span>
+            <h2 class="display-lg reveal r1" style="margin-bottom: 3rem;">Conectemos</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-text">
+                        ¿Buscas un desarrollador comprometido y en formación? 
+                        ¡Contáctame! Estoy disponible para nuevas oportunidades laborales.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:sebastiangalvis13140@gmail.com" class="contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            sebastiangalvis13140@gmail.com
+                        </a>
+                        <a href="https://github.com/JasakyGs" target="_blank" rel="noopener" class="contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            github.com/JasakyGs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap reveal r1">
+                    <form class="contact-form">
+                        <div class="form-field">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-textarea" required rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Enviar mensaje
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -505,7 +474,6 @@
 
     <script src="script.js"></script>
 
-    <!-- Modal para Certificados -->
     <div id="certModal" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeCert()">&times;</span>
